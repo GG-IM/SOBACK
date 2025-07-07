@@ -3,11 +3,18 @@ import dotenv from 'dotenv';
 //dotenv.config();
 
 const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: '123456789',
+  type: "mysql",
+  host: "tiendasmass.mysql.database.azure.com",
+  user: 'tilioes',
+  port: 3306,
+  password: 'Michita0123',
   database: 'vitalcare',
+  logging: true,
+  ssl: {
+    rejectUnauthorized: false,  // Si no necesitas validar estrictamente el certificado
+  },
 });
+
 
 // console.log('DB_USER:', process.env.DB_USER);
 // console.log('DB_PASS:', process.env.DB_PASS);
