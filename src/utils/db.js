@@ -3,13 +3,13 @@ import dotenv from 'dotenv';
 //dotenv.config();
 
 const pool = mysql.createPool({
-  type: "mysql",
+
   host: "tiendasmass.mysql.database.azure.com",
   user: 'tilioes',
   port: 3306,
   password: 'Michita0123+',
   database: 'vitalcare',
-  logging: true,
+
 });
 
 
