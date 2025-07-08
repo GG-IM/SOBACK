@@ -7,7 +7,7 @@ const pool = mysql.createPool({
   host: "tiendasmass.mysql.database.azure.com",
   user: 'tilioes',
   port: 3306,
-  password: 'Michita0123',
+  password: 'Michita0123+',
   database: 'vitalcare',
   logging: true,
 });
