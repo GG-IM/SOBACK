@@ -9,7 +9,9 @@ const pool = mysql.createPool({
   port: 3306,
   password: 'Michita0123+',
   database: 'vitalcare',
-
+  ssl: {
+    rejectUnauthorized: false,  // Si no necesitas validar estrictamente el certificado
+  },
 });
 
 
